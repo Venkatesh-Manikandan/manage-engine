@@ -1,0 +1,123 @@
+.events_wrapper {
+    width: 100%;
+    padding: 50px 0 20px 0;
+    background-color: var(--bg_gray);
+}
+.events_section {
+    width: 100%;
+}
+.events_inner {
+    width: 100%;
+    background-color: var(--white_color);
+}
+.event_card {
+    display: block;
+    width: 50%;
+    height: 310px;
+    padding: 35px 15px;
+}
+.event_card:last-child {
+    width: 45%;
+    border-left: 1px solid #ddd;
+}
+.event_card:last-child h2 {
+    color: #34ad65;
+}
+.card_left {
+    width: 30%;
+    float: left;
+    padding: 25px 0 0 0;
+}
+.card_left img {
+    width: 170px;
+    height: 150px;
+    object-fit: contain;
+}
+.card_right {
+    width: 65%;
+    float: right;
+    text-align: left;
+}
+.card_right h2 {
+    font-size: 37.5px;
+    line-height: 1.2;
+    font-family: puvi_semibold;
+    color: #d82e2e;
+    margin: 0;
+}
+.card_right p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--font_color);
+    font-family: puvi_medium;
+    margin: 15px 0;
+}
+.card_right a {
+    font-size: 15px;
+    color: #1891d2;
+    font-family: puvi_regular;
+}
+.event_btn {
+    font-size: 15px;
+    color: #138cd6;
+    display: inline-block;
+    margin: 30px 0 10px 0;
+    font-family: puvi_regular;
+}
+
+@media(max-width: 1024px) {
+    .events_inner {
+        flex-direction: column;
+    }
+    .event_card, .event_card:last-child {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .event_card:last-child {
+        border-top: 1px solid #ddd;
+        border-left: 0;
+    }
+    .card_left {
+        padding: 0;
+    }
+    .card_right h2 {
+        font-size: 22.5px;
+    }
+}
+@media(max-width: 768px) {
+    .event_card, .event_card:last-child {
+        padding: 15px 0 15px 10px;
+    }
+    .card_left {
+        width: auto;
+        padding: 0 10px 0 0;
+    }
+    .card_right p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 12px 0;
+    }
+}
+@media(max-width: 480px) {
+    .event_card, .event_card:last-child {
+        flex-direction: column;
+    }
+    .card_left {
+        padding: 0;
+    }
+    .card_left img {
+        max-width: 180px;
+        width: 100%;
+        height: auto;
+        padding: 0 0 15px 0;
+    }
+    .card_right {
+        width: 100%;
+        text-align: center;
+    }
+}

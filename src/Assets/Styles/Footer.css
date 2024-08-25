@@ -1,0 +1,195 @@
+footer {
+    width: 100%;
+    background-color: #222222;
+}
+.main_footer {
+    width: 100%;
+    padding: 50px 0;
+    text-align: left;
+}
+.footer_column {
+    width: 25%;
+}
+.footer_column h2 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    font-family: puvi_medium;
+    color: var(--white_color);
+}
+.footer_column li a {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #838383;
+    position: relative;
+    margin: 0 0 14px 0;
+    display: inline-block;
+}
+.footer_column li:last-child a {
+    margin: 0;
+}
+.footer_column li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #838383;
+    transition: var(--transition);
+}
+.footer_column li a:hover::before {
+    width: 100%;
+}
+.footer_column a img {
+    width: 270px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+.promo_banner_section a {
+    margin: 0;
+}
+.footer_column a:last-child img {
+    margin: 30px 0 0 0;
+}
+.social_section {
+    padding: 60px 0 0 0;
+}
+.social_section .flex_row {
+    padding: 0 0 20px 0;
+}
+.social_section li a {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    border: 1px solid var(--white_color);
+    border-radius: 50%;
+    padding: 8px;
+    margin: 0 10px 0 0 !important;
+}
+.social_section li a:hover::before {
+    display: none;
+}
+.social_section li:first-child a {
+    background: url('../Images/Footer/Linkedin.svg') 50%  46% / 45% no-repeat;
+}
+.social_section li:first-child a:hover {
+    background-color: #0e76a8;
+}
+.social_section li:nth-child(2) a {
+    background: url('../Images/Footer/Twitter.svg') 50% 52% / 45% no-repeat;
+}
+.social_section li:nth-child(2) a:hover {
+    background-color: #000000;
+}
+.social_section li:nth-child(3) a {
+    background: url('../Images/Footer/Facebook.svg') 48% 53% / 25% no-repeat;
+}
+.social_section li:nth-child(3) a:hover {
+    background-color: #4267b2;
+}
+.social_section li:nth-child(4) a {
+    background: url('../Images/Footer/Instagram.png') 50%/ 43% no-repeat;
+}
+.social_section li:nth-child(4) a:hover {
+    background: url('../Images/Footer/Instagram.png') 50%/ 43% no-repeat, linear-gradient(45deg,#f09433 0,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%) center no-repeat;
+}
+.social_section li:last-child a {
+    background: url('../Images/Footer/Youtube.svg') 50% / 50% no-repeat;
+}
+.social_section li:last-child a:hover {
+    background-color: #ff0000;
+}
+.social_section p {
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: puvi_medium;
+    color: #ffffffb3;
+    letter-spacing: .5px;
+}
+
+
+/* Footer bottom style starts here  */
+.footer_bottom {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #0f0f0f;
+}
+.footer_bottom_inner {
+    width: 100%;
+}
+.footer_bottom_inner .flex_row {
+    max-width: 75%;
+    width: 100%;
+    margin: 0 auto 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer_bottom_inner li a {
+    font-size: 14px;
+    font-family: puvi_medium;
+    color: #ffffffb3;
+    padding: 0 20px;
+    margin: 0 0 25px 0;
+    border-right: 1px solid #47484a;
+    display: block;
+}
+.footer_bottom_inner li:last-child a {
+    border-right: 0;
+}
+.footer_bottom_inner p {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color: #828282;
+    font-family: puvi_regular;
+}
+.footer_bottom_inner p a {
+    color: #828282;
+    font-family: puvi_regular;
+}
+.footer_bottom_inner p a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media(max-width: 1200px) {
+    .footer_column.promo_banner_section {
+        display: none;
+    }
+    .footer_column {
+        width: 33.33333%;
+        margin: 0 30px 0 0;
+    }
+    .social_section {
+        padding: 40px 0 0 0;
+    }
+}
+@media(max-width: 992px) {
+    .footer_bottom_inner .flex_row {
+        max-width: 100%;
+    }
+}
+@media(max-width: 650px) {
+    .main_footer {
+        flex-wrap: wrap;
+    }
+    .footer_column {
+        width: 50%;
+        margin: 0;
+    }
+    .footer_column:not(:last-child) {
+        margin: 0 0 25px 0;
+    }
+    .footer_column li a {
+        margin: 0 0 10px 0;
+    }
+}
+@media(max-width: 480px) {
+    .footer_column {
+        width: 100%;
+    }
+
+}

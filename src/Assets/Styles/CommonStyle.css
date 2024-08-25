@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    font-family: puvi_regular;
+}
+ul {
+    list-style: none;
+}
+a {
+    line-height: 1;
+    color: var(--font_color);
+    font-family: puvi_semibold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Root declaration */
+:root {
+    --blue_color: #123991;
+    --text_blue: #11368b;
+    --black_color: #000000;
+    --red_color: #dd002c;
+    --font_color: #444444;
+    --white_color: #ffffff;
+    --yellow_color: #f6c757;
+    --bg_gray: #f4f4f4;
+    --transition: 0.5s ease;
+}
+
+
+/* Font included */
+@font-face {
+    font-family: puvi_regular;
+    src: url(../Fonts/puvi_regular/Zoho_Puvi_Regular.eot);
+    src: url(../Fonts/puvi_regular/Zoho_Puvi_Regular.eot) format("embedded-opentype"), url(../Fonts/puvi_regular/Zoho\ Puvi\ Regular.woff2) format("woff2"), url(../Fonts/puvi_regular/Zoho\ Puvi\ Regular.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: puvi_medium;
+    src: url(../Fonts/puvi_medium/Zoho-Puvi-Medium.eot);
+    src: url(../Fonts/puvi_medium/Zoho-Puvi-Medium.eot) format("embedded-opentype"), url(../Fonts/puvi_medium/Zoho-Puvi-Medium.woff2) format("woff2"), url(../Fonts/puvi_medium/Zoho\ Puvi\ Medium.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: puvi_semibold;
+    src: url(../Fonts/puvi_semibold/Zoho_Puvi_Semibold.eot);
+    src: url(../Fonts/puvi_semibold/Zoho_Puvi_Semibold.eot) format("embedded-opentype"), url(../Fonts/puvi_semibold/Zoho\ Puvi\ Semibold.woff2) format("woff2"), url(../Fonts/puvi_semibold/Zoho\ Puvi\ Semibold.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: puvi_bold;
+    src: url(../Fonts/puvi_bold/Zoho-Puvi-Bold.eot);
+    src: url(../Fonts/puvi_bold/Zoho-Puvi-Bold.eot) format("embedded-opentype"), url(../Fonts/puvi_bold/Zoho-Puvi-Bold.woff2) format("woff2"), url(../Fonts/puvi_bold/Zoho\ Puvi\ Bold.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Container */
+.default_container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.full_width_container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+.cmn_btn {
+    font-size: 14px;
+    padding: 12px 30px;
+    font-family: puvi_semibold;
+    border-radius: 3px;
+}
+
+
+
+/* Trials section style starts here */
+.trials_wrapper {
+    width: 100%;
+    padding: 80px 0;
+}
+.trials_wrapper h2 {
+    font-size: 22.5;
+    line-height: 1.3;
+    font-family: puvi_semibold;
+    color: var(--font_color);
+    margin: 0 0 40px 0;
+}
+.trials_wrapper .cmn_btn {
+    font-size: 14px;
+    color: var(--white_color);
+    background-color: #e04b3a;
+}
+
+
+
+@media(max-width: 1500px) {
+    .default_container {
+        max-width: 100%;
+    }
+}
+@media(max-width: 1400px) {
+    /* .default_container {
+        max-width: 1200px;
+        } */
+}
+@media(max-width: 992px) {
+    .default_container {
+        padding: 0 15px;
+    }
+}

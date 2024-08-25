@@ -1,0 +1,80 @@
+.connect_wrapper {
+    width: 100%;
+    background: linear-gradient(to bottom, #293855 0, #0f111e 60%, #0c0b1b 100%);
+    padding: 20px 0;
+    color: var(--white_color);
+}
+.connect_wrapper h2 {
+    margin: 20px 0 0 0;
+}
+.connect_wrapper h2 a {
+    font-size: 40.5px;
+    line-height: 1.2;
+    color: var(--white_color);
+    font-family: puvi_semibold;
+}
+.connect_inner p {
+    font-size: 15px;
+    font-family: puvi_medium;
+    margin: 15px 0;
+}
+.connect_inner ul {
+    padding: 40px 0 20px 0;
+}
+.connect_inner ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 10px 0;
+}
+.bg_img {
+    display: block;
+    width: 80px;
+    height: 90px;
+    background: url('../Images/community-sprite.svg') 0 0 / cover no-repeat;
+    background-position: 0 0;
+    margin: 0 0 10px 0;
+}
+.connect_inner ul li:nth-child(1) .bg_img {
+    background-position: 0 -100px;
+}
+.connect_inner ul li:nth-child(3) .bg_img {
+    background-position: 0 -220px;
+}
+.connect_inner ul li:nth-child(4) .bg_img {
+    background-position: -5px -330px;
+}
+.img_title {
+    color: var(--white_color);
+    font-family: puvi_regular;
+}
+p a {
+    color: #138cd6;
+}
+p a:hover {
+    text-decoration: underline;
+}
+
+
+@media(max-width: 1024px) {
+    .connect_inner ul {
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 992px) {
+    .connect_wrapper h2 a {
+        font-size: 34px;
+    }
+}
+@media(max-width: 576px) {
+    .connect_inner ul li {
+        width: 50%;
+    }
+}
+@media(max-width: 380px) {
+    .connect_inner ul li {
+        width: 100%;
+    }
+}
