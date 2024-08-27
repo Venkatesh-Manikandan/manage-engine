@@ -5,6 +5,9 @@ import BgImage3 from '../Assets/Images/BannerAssets/banner-bg3.png'
 import BannerImage from '../Assets/Images/BannerAssets/banner-img.svg'
 
 function Banner() {
+
+    const buttonText = ['Text 1', 'Text 2']
+    
     return(
         <div className='banner_wrapper'>
             <div className='default_container'>

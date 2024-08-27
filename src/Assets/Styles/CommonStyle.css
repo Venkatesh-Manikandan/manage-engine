@@ -8,6 +8,10 @@ body {
     font-weight: 400;
     color: #333;
     font-family: puvi_regular;
+    letter-spacing: .5px;
+}
+.overflow_hidden {
+    overflow: hidden;
 }
 ul {
     list-style: none;

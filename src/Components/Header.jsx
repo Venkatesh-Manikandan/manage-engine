@@ -2,9 +2,12 @@ import { useEffect, useState } from 'react';
 import '../Assets/Styles/Header.css'
 import logo from '../Assets/Images/logo.svg'
 import sprite from '../Assets/Images/sprite.png'
+import SecondaryBtn from './SecondaryBtn';
+import DropdownMenu from './DropdownMenu';
 
 function Header() {
 
+    // Header Sticky function
     const isSticky = (e) => {
         const header = document.querySelector('.main_header');
         const scrollTop = window.scrollY;
@@ -18,46 +21,35 @@ function Header() {
         };
     });
 
-    const [isHover, setIsHover] = useState(false);
-    // const linkHover = () => setIsHover(!isHover)
+    // Menu hover add class function
     const linkHover = (e) => {
-        e.target.classList.add('active');
-        // e.target.nextChil.classList.add('submenu_toggle');
+        e.target.parentElement.classList.add('active');
+        document.body.classList.add('overflow_hidden')
     }
     const removeLinkHover = (e) => {
-        e.target.classList.remove('active');
+        e.target.parentElement.classList.remove('active');
+        document.body.classList.remove('overflow_hidden')
     }
-    // const linkHover = () => {
-    //     setIsHover(false);
-    //     console.log(isHover);
-    //     const hoveredLink = document.querySelector('.menu_dropdown');
-    //     isHover != false ? hoveredLink.classList.add('menu_open') : hoveredLink.classList.remove('menu_open');
-    // }
     
-
-    // const linkHover = (e) => {
-    //     setIsHover(prevState => ({isHover: !prevState}));
-    //     const hoveredLink = document.querySelector('.menu_dropdown');
-        
-    //     isHover ? hoveredLink.classList.add('dropdown_open') : hoveredLink.classList.remove('dropdown_open')
-    //     console.log(isHover);
-    //     const openMenu = true;
-    //     openMenu === true ? hoveredLink.classList.add('dropdown_open') : hoveredLink.classList.remove('dropdown_open');
-    // }
-    
-    // const menuClicked = (event) => {
-    //     const hamburgerMenu = document.querySelector('.hamburger_menu');
-    //     const addClass = window;
-    //     addClass ? hamburgerMenu.classList.add('menu_open') : hamburgerMenu.classList.remove('menu_open');
-    // }
-    // useEffect(() => {
-    //     window.addEventListener('menu_open', menuClicked);
-    //     return()=> {
-    //         window.removeEventListener('menu_open', menuClicked);
-    //     }
-    // })
-
+    // Hamburger menu function
     const [click, setClick] = useState(false);
+
+    // Button text
+    const buttonText = ['FREE DOWNLOADS']
+
+
+    // Dropdown menu array declaration
+    const dropdownMenu = [
+        'Identity and access management',
+        'Unified service management', 
+        'Unified endpoint management and security',
+        'IT operations management',
+        'Security information and event management',
+        'Advanced IT analytics',
+        'Low-code app development',
+        'Cloud solutions for enterprise IT',
+        'IT management for MSPs',
+    ]
 
     return(
         <>
@@ -83,11 +75,7 @@ function Header() {
                             <ul>
                                 <li onMouseEnter={linkHover} onMouseLeave={removeLinkHover}>
                                     <a href='javascript:;' title='Products'>Products</a>
-                                    <ul className='sub_menu'>
-                                        <li>
-                                            <a href="javascript:;" title=''></a>
-                                        </li>
-                                    </ul>
+                                    <DropdownMenu menuLink={dropdownMenu} />
                                 </li>
                                 <li onMouseEnter={linkHover} onMouseLeave={removeLinkHover}>
                                     <a href='javascript:;' title='Solutions'>Solutions</a>
@@ -104,8 +92,12 @@ function Header() {
                             </ul>
                         </div>
 
-                        <a href='javascript:;' title='FREE DOWNLOADS' className='header_btn cmn_btn'>FREE DOWNLOADS</a>
+                        {/* <a href='javascript:;' title='FREE DOWNLOADS' className='header_btn cmn_btn'>FREE DOWNLOADS</a> */}
                         
+                        <div className='header_btn'>
+                            <SecondaryBtn btnText={buttonText} />
+                        </div>
+
                         <div className={`hamburger_menu ${click ? "menu_open" : ""}`} onClick={() => setClick(!click)}>
                             <span></span>
                             <span></span>
