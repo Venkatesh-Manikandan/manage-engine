@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/manage-engine/static/css/main.0545cbdc.css",
-    "main.js": "/manage-engine/static/js/main.9146f81c.js",
+    "main.css": "/manage-engine/static/css/main.c5cbad13.css",
+    "main.js": "/manage-engine/static/js/main.0a026882.js",
     "static/js/453.c9948512.chunk.js": "/manage-engine/static/js/453.c9948512.chunk.js",
     "static/media/Zoho_Puvi_Regular.eot": "/manage-engine/static/media/Zoho_Puvi_Regular.5aaf645efc4d5b604407.eot",
     "static/media/Zoho_Puvi_Semibold.eot": "/manage-engine/static/media/Zoho_Puvi_Semibold.d8546c4bf87488cca308.eot",
@@ -19,6 +19,7 @@
     "static/media/customers1.jpg": "/manage-engine/static/media/customers1.2558d2c60e620c88e270.jpg",
     "static/media/Zoho Puvi Semibold.woff2": "/manage-engine/static/media/Zoho Puvi Semibold.99cf96c273c405df399a.woff2",
     "static/media/clients_sprite.jpg": "/manage-engine/static/media/clients_sprite.674de64974a1091c2b1f.jpg",
+    "static/media/customers-sprite-bg.svg": "/manage-engine/static/media/customers-sprite-bg.a772b582563065400c39.svg",
     "static/media/product_icon.svg": "/manage-engine/static/media/product_icon.a772b582563065400c39.svg",
     "static/media/Zoho-Puvi-Medium.woff2": "/manage-engine/static/media/Zoho-Puvi-Medium.d6af50ac023f7f74592a.woff2",
     "static/media/Zoho-Puvi-Bold.woff2": "/manage-engine/static/media/Zoho-Puvi-Bold.43094502861d505c7426.woff2",
@@ -42,12 +43,12 @@
     "static/media/Facebook.svg": "/manage-engine/static/media/Facebook.49fc3fe9dd55345837845a0d3751b28a.svg",
     "index.html": "/manage-engine/index.html",
     "static/media/play-icon.svg": "/manage-engine/static/media/play-icon.ba585428e0d13b4e2575860e14819e9a.svg",
-    "main.0545cbdc.css.map": "/manage-engine/static/css/main.0545cbdc.css.map",
-    "main.9146f81c.js.map": "/manage-engine/static/js/main.9146f81c.js.map",
+    "main.c5cbad13.css.map": "/manage-engine/static/css/main.c5cbad13.css.map",
+    "main.0a026882.js.map": "/manage-engine/static/js/main.0a026882.js.map",
     "453.c9948512.chunk.js.map": "/manage-engine/static/js/453.c9948512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0545cbdc.css",
-    "static/js/main.9146f81c.js"
+    "static/css/main.c5cbad13.css",
+    "static/js/main.0a026882.js"
   ]
 }
