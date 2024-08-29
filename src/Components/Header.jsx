@@ -23,14 +23,14 @@ function Header() {
 
     // Menu hover add class function
     const linkHover = (e) => {
-        e.target.parentElement.classList.add('active');
+        e.currentTarget.classList.add('active');
         document.body.classList.add('overflow_hidden')
     }
     const removeLinkHover = (e) => {
-        e.target.parentElement.classList.remove('active');
+        e.currentTarget.classList.remove('active');
         document.body.classList.remove('overflow_hidden')
-    }
-    
+    }    
+
     // Hamburger menu function
     const [click, setClick] = useState(false);
 
@@ -74,6 +74,7 @@ function Header() {
                         <div className='menu_section'>
                             <ul>
                                 <li onMouseEnter={linkHover} onMouseLeave={removeLinkHover}>
+                                    {/* <li> */}
                                     <a href='javascript:;' title='Products'>Products</a>
                                     <DropdownMenu menuLink={dropdownMenu} />
                                 </li>
