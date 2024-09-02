@@ -40,22 +40,22 @@
     width: 100%;
     object-fit: contain;
 }
-.flex_btn .banner_btn1 {
+.flex_btn a:first-child {
     padding: 14px 20px;
     color: var(--black_color);
     background-color: var(--yellow_color);
     margin: 0 15px 0 0;
 }
-.flex_btn .banner_btn1:hover {
+.flex_btn a:first-child:hover {
     background-color: #fdbd22;
 }
-.flex_btn .banner_btn2 {
+.flex_btn a:nth-child(2) {
     padding: 14px 20px;
     border: 1px solid var(--white_color);
     background-color: transparent;
     color: var(--white_color);
 }
-.flex_btn .banner_btn2:hover {
+.flex_btn a:nth-child(2):hover {
     background-color: var(--white_color);
     color: var(--black_color);
 }

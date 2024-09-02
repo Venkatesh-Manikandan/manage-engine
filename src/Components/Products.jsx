@@ -68,7 +68,7 @@ function Products() {
                     our AI-enhanced IT management solutions can help you solve these challenges and more.</p>
                 
                     <div className="product_cards flex_row">
-                        {ProductData.map( cardcontent => <ProductCard content={cardcontent} />)}
+                        {ProductData.map( cardcontent => <ProductCard  key={cardcontent.title} content={cardcontent} />)}
                         {/* <ProductCard /> */}
                     </div>
 

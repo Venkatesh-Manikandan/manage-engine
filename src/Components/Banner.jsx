@@ -6,7 +6,7 @@ import BannerImage from '../Assets/Images/BannerAssets/banner-img.svg'
 
 function Banner() {
 
-    const buttonText = ['Text 1', 'Text 2']
+    const buttonText = ['GET STARTED', 'KNOW MORE']    
     
     return(
         <div className='banner_wrapper'>
@@ -16,8 +16,9 @@ function Banner() {
                         <h1>Take control of your IT.</h1>
                         <p>Monitor, manage, and secure your IT infrastructure with <br /> enterprise-grade solutions built from the ground up.</p>
                         <div className='flex_row flex_btn'>
-                            <a href='javascript:;' className='cmn_btn banner_btn1' title='GET STARTED'>GET STARTED</a>
-                            <a href='javascript:;' className='cmn_btn banner_btn2' title='KNOW MORE'>KNOW MORE</a>
+                            {/* <a href='javascript:;' className='cmn_btn banner_btn1' title={btnText1}>{btnText1}</a>
+                            <a href='javascript:;' className='cmn_btn banner_btn2' title={btnText2}>{btnText2}</a> */}
+                            {buttonText.map(text => <a href='javascript:;' className='cmn_btn' title={text} key={text}>{text}</a>)}
                         </div>
                     </div>
                     <div className='banner_image'>

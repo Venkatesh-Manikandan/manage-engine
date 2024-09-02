@@ -3,7 +3,7 @@ function ProductCard(props) {
     // console.log(props)
     return(
         <>
-            <a href="javascript:;" className="product_card flex_col" title="sdflhlfhfads">
+            <a href="javascript:;" className="product_card flex_col" title={content.title}>
                 <div className="product_icon"></div>
                 <h2>{content.title}</h2>
                 <h3>{content.products}</h3>

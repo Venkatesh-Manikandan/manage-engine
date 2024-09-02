@@ -56,7 +56,7 @@ function DropdownMenu(props) {
 
                 <div className="submenu_left">
                     <ul className="dropdown_menu flex_col">
-                        {menuLink.map(props => <li> <a href="javascript:;" title={props}>{props}</a><span></span></li>)}
+                        {menuLink.map(props => <li key={props}> <a href="javascript:;" title={props}>{props}</a><span></span></li>)}
                     </ul>
                 </div>
 

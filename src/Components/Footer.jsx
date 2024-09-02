@@ -6,8 +6,49 @@ import Twitter from '../Assets/Images/Footer/Twitter.svg'
 import Facebook from '../Assets/Images/Footer/Facebook.svg'
 import Instagram from '../Assets/Images/Footer/Instagram.png'
 import Youtube from '../Assets/Images/Footer/Youtube.svg'
+import FooterMenu from './FooterMenu'
 
 function Footer() {
+
+    const footerMenuLinks = [
+        {
+            heading: 'Resources',
+            footerLink: 'Blog',
+            footerLink: 'Insights',
+            footerLink: 'Academy',
+            footerLink: 'Customer stories',
+            footerLink: 'Community',
+            footerLink: 'White papers',
+            footerLink: 'Product documentation',
+        },
+        {
+            heading: 'Company',
+            footerLink: 'About us',
+            footerLink: 'Customers',
+            footerLink: 'Analyst reports',
+            footerLink: 'Events',
+            footerLink: 'Newsroom',
+            footerLink: 'Partner with us',
+            footerLink: 'Careers',
+            footerLink: 'Sitemap',
+        },
+        {
+            heading: 'Training and support',
+            footerLink: 'Contact support',
+            footerLink: 'Store',
+            footerLink: 'Marketplace',
+            footerLink: 'Training and certification',
+        },
+        // {
+        //     heading: 'Connect with us:',
+        //     socialLink: '',
+        //     socialLink: '',
+        //     socialLink: '',
+        //     socialLink: '',
+        //     socialLink: '',
+        // }
+    ]
+
     return(
         <footer>
             <div className="default_container">
@@ -21,6 +62,7 @@ function Footer() {
                             <img src={PromoBanner2} alt="Comply with the ISO/IEC 20000 standard" />
                         </a>
                     </div>
+                    
                     <div className="footer_column">
                         <h2>Resources</h2>
                         <ul>
@@ -117,6 +159,20 @@ function Footer() {
                     </div>
 
                 </div>
+                {/* <div className="main_footer flex_row">
+
+                    <div className="footer_column promo_banner_section">
+                        <a href="javascript:;" title="Transform your financial services and banking operations">
+                            <img src={PromoBanner1} alt="Transform your financial services and banking operations" />
+                        </a>
+                        <a href="javascript:;" title="Comply with the ISO/IEC 20000 standard">
+                            <img src={PromoBanner2} alt="Comply with the ISO/IEC 20000 standard" />
+                        </a>
+                    </div>
+                    
+                    {footerMenuLinks.map( footerMenuLinks => <FooterMenu menuLink={footerMenuLinks} />)}
+
+                </div> */}
             </div>
 
 
