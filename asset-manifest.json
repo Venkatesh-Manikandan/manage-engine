@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/manage-engine/static/css/main.9f94a83a.css",
-    "main.js": "/manage-engine/static/js/main.55c167c4.js",
+    "main.css": "/manage-engine/static/css/main.1475f88a.css",
+    "main.js": "/manage-engine/static/js/main.ed490e4e.js",
     "static/js/453.c9948512.chunk.js": "/manage-engine/static/js/453.c9948512.chunk.js",
     "static/media/Zoho_Puvi_Regular.eot": "/manage-engine/static/media/Zoho_Puvi_Regular.5aaf645efc4d5b604407.eot",
     "static/media/Zoho_Puvi_Semibold.eot": "/manage-engine/static/media/Zoho_Puvi_Semibold.d8546c4bf87488cca308.eot",
@@ -43,12 +43,12 @@
     "static/media/Facebook.svg": "/manage-engine/static/media/Facebook.49fc3fe9dd5534583784.svg",
     "index.html": "/manage-engine/index.html",
     "static/media/play-icon.svg": "/manage-engine/static/media/play-icon.ba585428e0d13b4e2575860e14819e9a.svg",
-    "main.9f94a83a.css.map": "/manage-engine/static/css/main.9f94a83a.css.map",
-    "main.55c167c4.js.map": "/manage-engine/static/js/main.55c167c4.js.map",
+    "main.1475f88a.css.map": "/manage-engine/static/css/main.1475f88a.css.map",
+    "main.ed490e4e.js.map": "/manage-engine/static/js/main.ed490e4e.js.map",
     "453.c9948512.chunk.js.map": "/manage-engine/static/js/453.c9948512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f94a83a.css",
-    "static/js/main.55c167c4.js"
+    "static/css/main.1475f88a.css",
+    "static/js/main.ed490e4e.js"
   ]
 }
