@@ -1,7 +1,10 @@
 import ProductCard from "./ProductCard"
 import '../Assets/Styles/Products.css'
+import PrimaryBtn from '../Components/PrimaryBtn'
 
 function Products() {
+
+    const btnText = ['EXPLORE OUR PRODUCTS']
 
     const ProductData = [
         {
@@ -73,7 +76,8 @@ function Products() {
                     </div>
 
                     <div className="products_btn">
-                        <a href="javascript:;" title="EXPLORE OUR PRODUCTS" className="cmn_btn">EXPLORE OUR PRODUCTS</a>
+                        {/* <a href="javascript:;" title="EXPLORE OUR PRODUCTS" className="cmn_btn">EXPLORE OUR PRODUCTS</a> */}
+                        <PrimaryBtn btnText = {btnText} />
                     </div>
 
                 </div>

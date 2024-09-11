@@ -115,6 +115,9 @@ a {
     color: var(--white_color);
     background-color: #e04b3a;
 }
+.trials_wrapper .cmn_btn:hover {
+    background-color: rgb(221, 0, 44);
+}
 
 
 

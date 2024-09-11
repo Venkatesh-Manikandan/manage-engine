@@ -1,3 +1,5 @@
+import PrimaryBtn from "./PrimaryBtn"
+
 function SlickSlide(props) {
 
     const {content} = props
@@ -7,7 +9,8 @@ function SlickSlide(props) {
             <div className="slide_inner">
                 <h2>{content.slideTitle}</h2>
                 <p>{content.slideText}</p>
-                <a href="javascript:;" title={content.slideButton} className="cmn_btn">{content.slideButton}</a>
+                {/* <a href="javascript:;" title={content.slideButton} className="cmn_btn">{content.slideButton}</a> */}
+                <PrimaryBtn btnText = {content.slideButton} />
                 {/* <p className="para_text">{content.slideAddlText}</p> */}
                 {content.slideAddlText != '' ? <p className="para_text">{content.slideAddlText}</p> : ''}
             </div>
